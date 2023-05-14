@@ -132,4 +132,12 @@ footer {
     justify-content: center;
     background-color: var(--color-neutral-0);
     font-size: 0.9rem;
+    padding: 1.5rem;
+}
+
+@media screen and (max-width) {
+    #footer_contente {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
 }
