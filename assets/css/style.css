@@ -15,6 +15,10 @@
     letter-spacing: 1px;
 }
 
+main {
+    height: 80vh;
+}
+
 footer {
     width: 100%;
     color: var(--color-neutral-40);
@@ -135,9 +139,16 @@ footer {
     padding: 1.5rem;
 }
 
-@media screen and (max-width) {
-    #footer_contente {
+@media screen and (max-width: 768px) {
+    #footer_content {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
     }
 }
